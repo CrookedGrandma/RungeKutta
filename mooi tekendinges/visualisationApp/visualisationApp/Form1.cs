@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace visualisationApp
 {
     public partial class Form1 : Form
@@ -22,44 +23,44 @@ namespace visualisationApp
         {
             Graphics gr = CreateGraphics();
             gr.DrawLine((new Pen(new SolidBrush(col), thickness)), x1, y1, x2, y2);
+            gr.Dispose();
+            //this.Update();
         }
 
         // method for drawing a planet on the screen
         public void drawPlanet(Color col, int thickness, int x, int y, int radius)
         {
             Graphics gr = CreateGraphics();
+            x++;
             gr.DrawEllipse((new Pen(new SolidBrush(col), thickness)), x, y, radius, radius);
+            gr.Dispose();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            /*
             Graphics gr = CreateGraphics();
             Brush brush = new SolidBrush(Color.Red);
-
             Pen pen = new Pen(brush, 80);
-            gr.DrawLine((new Pen(new SolidBrush(Color.Red), 80)), 10, 10, 500, 500);
-            */
+            gr.DrawLine(pen, 10, 10, 500, 500);
+            gr.Dispose();
 
-
-            drawLine(Color.Red, 2, 0, 0, 500, 500);
-            drawPlanet(Color.Blue, 3, 50, 50, 30);
+            //drawLine(Color.Red, 2, 0, 0, 500, 500);
+            //drawPlanet(Color.Blue, 3, 50, 50, 30);
         }
-
-
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        /*
         public void canvas_Paint(object sender, PaintEventArgs e)
         {
-            /*Graphics gr = CreateGraphics();
+            Graphics gr = CreateGraphics();
             Brush brush = new SolidBrush(Color.Red);
             Pen pen = new Pen(brush, 80);
-            gr.DrawLine(pen, 10, 10, 500, 500);*/
+            gr.DrawLine(pen, 10, 10, 500, 500);
         }
+        */
 
-        
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+    
     }
 }
