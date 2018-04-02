@@ -1,0 +1,15 @@
+double
+0 0 //starting position bigboi
+5.91651e+11 //mass bigboi
+0 1 //starting position satellite
+6.28319 0 //starting velocity satellite
+0.0002 //timestep
+50000 //number of steps
+
+9.999800
+-0.001327 1.000000
+6.283175 0.008337
+1.000001
+
+0.0776698 //total duration
+1.11856e-06 //error
