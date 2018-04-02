@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace visualisationApp.Properties
+namespace WindowsFormsApp1.Properties
 {
 
 
