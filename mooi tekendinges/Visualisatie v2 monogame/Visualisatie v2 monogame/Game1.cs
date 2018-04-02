@@ -88,7 +88,7 @@ namespace Visualisatie_v2_monogame
                 new Vector2(200, 200), //start of line
                 new Vector2(100, 50) //end of line
             );
-            drawPlanet(Color.Red, new Vector2(50, 50), 50);
+            //drawPlanet(Color.Red, new Vector2(50, 50), 50);
 
             spriteBatch.End();
 
