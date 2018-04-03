@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RungeKutta", "RungeKutta\RungeKutta.vcxproj", "{9B068704-BB75-410C-A14D-91608E1F87FD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RungeKutta - Float", "RungeKutta - Float\RungeKutta - Float.vcxproj", "{E76C86E1-4332-47CE-94B8-9D2F0E9CBDB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{9B068704-BB75-410C-A14D-91608E1F87FD}.Release|x64.Build.0 = Release|x64
 		{9B068704-BB75-410C-A14D-91608E1F87FD}.Release|x86.ActiveCfg = Release|Win32
 		{9B068704-BB75-410C-A14D-91608E1F87FD}.Release|x86.Build.0 = Release|Win32
+		{E76C86E1-4332-47CE-94B8-9D2F0E9CBDB5}.Debug|x64.ActiveCfg = Debug|x64
+		{E76C86E1-4332-47CE-94B8-9D2F0E9CBDB5}.Debug|x64.Build.0 = Debug|x64
+		{E76C86E1-4332-47CE-94B8-9D2F0E9CBDB5}.Debug|x86.ActiveCfg = Debug|Win32
+		{E76C86E1-4332-47CE-94B8-9D2F0E9CBDB5}.Debug|x86.Build.0 = Debug|Win32
+		{E76C86E1-4332-47CE-94B8-9D2F0E9CBDB5}.Release|x64.ActiveCfg = Release|x64
+		{E76C86E1-4332-47CE-94B8-9D2F0E9CBDB5}.Release|x64.Build.0 = Release|x64
+		{E76C86E1-4332-47CE-94B8-9D2F0E9CBDB5}.Release|x86.ActiveCfg = Release|Win32
+		{E76C86E1-4332-47CE-94B8-9D2F0E9CBDB5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
