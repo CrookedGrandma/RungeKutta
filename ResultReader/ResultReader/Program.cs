@@ -17,14 +17,14 @@ namespace SplitImage {
                 double stepSize, error;
                 int steps;
 
-                int.TryParse(lines[6].Split()[0].Replace('.', ','), out steps);
+                int.TryParse(lines[6].Split()[0]/*.Replace('.', ',')*/, out steps);
                 //double.TryParse(lines[6].Split()[0].Replace('.', ','), out stepSize);
-                double.TryParse(lines[15].Split()[0].Replace('.', ','), out error);
-                if(Data[(steps / 100) - 1] == null)
+                double.TryParse(lines[15].Split()[0]/*.Replace('.', ',')*/, out error);
+                if(Data[(steps / 10) - 1] == null)
                 {
-                    Data[(steps / 100) - 1] = new List<double[]>();
+                    Data[(steps / 10) - 1] = new List<double[]>();
                 }
-                Data[(steps/100)-1].Add(new double[2]{steps, error});
+                Data[(steps/10)-1].Add(new double[2]{steps, error});
 
 
 
@@ -32,7 +32,7 @@ namespace SplitImage {
             foreach(List<double[]> l in Data)
             {
                 writer.Write(l[0][0]);
-                writer.Write(';');
+                writer.Write(',');
                 double errorsum = 0;
                 double errorvarianceSum = 0;
                 foreach (double[] d in l)
@@ -48,7 +48,7 @@ namespace SplitImage {
                 double stDev = Math.Sqrt(var);
                 double standardError = Math.Sqrt(var / 100);
                 writer.Write(mean);
-                writer.Write(';');
+                writer.Write(',');
                 writer.WriteLine(standardError);
             }
         }
